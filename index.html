@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administración de Empresas | Hotel Holiday Inn de Tapachula</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-card">
+      <strong>Administración de Empresas</strong>
+      <span>Exposición profesiográfica y empresarial</span>
+      <div class="loader-track"><div class="loader-bar"></div></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor" id="cursor"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="site-header" id="header">
+    <a class="brand text-brand" href="#inicio" aria-label="Inicio">
+      <span>Administración de Empresas</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir navegación">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#carrera">Carrera</a>
+      <a href="#perfiles">Perfiles</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#plan">Plan</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero career-hero" id="inicio">
+      <div class="hero-bg parallax" style="background-image:url('assets/p054_img01_xref354.jpeg')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">Carrera profesional • Área económico-administrativa</span>
+        <h1>Administración de Empresas</h1>
+        <p class="hero-subtitle">Una carrera para dirigir organizaciones, coordinar recursos, tomar decisiones estratégicas y actuar con ética profesional en empresas públicas, privadas y de servicios.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#carrera">Conocer la carrera</a>
+          <a class="btn ghost" href="#empresa">Ver empresa analizada</a>
+        </div>
+        <div class="hero-stats">
+          <article><strong data-count="8">0</strong><span>áreas clave de formación</span></article>
+          <article><strong data-count="7">0</strong><span>campos laborales principales</span></article>
+          <article><strong data-count="12">0</strong><span>preguntas de entrevista profesional</span></article>
+        </div>
+      </div>
+      <div class="hero-collage" aria-hidden="true">
+        <img class="float-card card-b" src="assets/p053_img02_xref347.jpeg" alt="">
+        <img class="float-card card-c" src="assets/p054_img02_xref355.jpeg" alt="">
+        <img class="float-card card-d" src="assets/p053_img01_xref346.jpeg" alt="">
+      </div>
+      <a class="scroll-cue" href="#carrera">Deslizar</a>
+    </section>
+
+    <section class="visual-marquee" aria-label="Evidencias de carrera y empresa">
+      <div class="marquee-track">
+        <img src="assets/p053_img01_xref346.jpeg" alt="Visita empresarial">
+        <img src="assets/p053_img02_xref347.jpeg" alt="Visita empresarial">
+        <img src="assets/p054_img01_xref354.jpeg" alt="Entrevista en empresa">
+        <img src="assets/p054_img02_xref355.jpeg" alt="Evidencia empresarial">
+        <img src="assets/page_028.jpg" alt="Información de la carrera">
+        <img src="assets/page_029.jpg" alt="Oferta y plan de estudios">
+        <img src="assets/p053_img01_xref346.jpeg" alt="Visita empresarial">
+        <img src="assets/p053_img02_xref347.jpeg" alt="Visita empresarial">
+        <img src="assets/p054_img01_xref354.jpeg" alt="Entrevista en empresa">
+        <img src="assets/p054_img02_xref355.jpeg" alt="Evidencia empresarial">
+        <img src="assets/page_028.jpg" alt="Información de la carrera">
+        <img src="assets/page_029.jpg" alt="Oferta y plan de estudios">
+      </div>
+    </section>
+
+    <section class="section showcase" id="carrera">
+      <div class="showcase-copy reveal">
+        <span class="eyebrow">¿De qué trata?</span>
+        <h2>La carrera forma profesionales capaces de gestionar organizaciones con visión estratégica.</h2>
+        <p>El área económico-administrativa estudia la organización, dirección y gestión de recursos dentro de empresas u organizaciones. Integra conocimientos de economía, administración, contabilidad, finanzas y mercadotecnia para analizar problemas, proponer soluciones y mejorar el desempeño empresarial.</p>
+        <div class="mini-metrics">
+          <span>Planeación</span>
+          <span>Organización</span>
+          <span>Dirección</span>
+          <span>Control</span>
+        </div>
+      </div>
+      <div class="showcase-stack reveal">
+        <img src="assets/page_027.jpg" alt="Área económico-administrativa">
+        <img src="assets/page_028.jpg" alt="Administración de Empresas">
+        <img src="assets/page_030.jpg" alt="Código ético">
+      </div>
+    </section>
+
+    <section class="section" id="historia">
+      <div class="section-head reveal">
+        <span class="eyebrow">Historia</span>
+        <h2>Evolución de la Administración de Empresas</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span>Primeras civilizaciones</span><p>Desde las primeras sociedades existió la necesidad de organizar recursos y actividades para alcanzar objetivos comunes.</p></article>
+        <article class="timeline-item reveal"><span>Revolución Industrial</span><p>En el siglo XIX las empresas crecieron y surgió la necesidad de mejorar la organización del trabajo y la eficiencia en las fábricas.</p></article>
+        <article class="timeline-item reveal"><span>Taylor y Fayol</span><p>Sus aportaciones establecieron principios para mejorar la administración de las empresas y fortalecer su funcionamiento.</p></article>
+        <article class="timeline-item reveal"><span>Actualidad</span><p>La administración integra liderazgo, innovación, ética profesional y responsabilidad social para responder a los retos empresariales.</p></article>
+      </div>
+    </section>
+
+    <section class="section profiles" id="perfiles">
+      <div class="profile-card reveal">
+        <span class="eyebrow">Perfil de ingreso</span>
+        <h2>Para estudiantes con interés en negocios y liderazgo.</h2>
+        <ul>
+          <li>Interés por el mundo de los negocios.</li>
+          <li>Habilidades de comunicación y pensamiento analítico.</li>
+          <li>Responsabilidad y capacidad para trabajar en equipo.</li>
+          <li>Interés por temas económicos y administrativos.</li>
+          <li>Iniciativa y actitud emprendedora.</li>
+        </ul>
+      </div>
+      <div class="profile-card dark reveal">
+        <span class="eyebrow">Perfil de egreso</span>
+        <h2>Profesionales preparados para dirigir y gestionar.</h2>
+        <ul>
+          <li>Conocimientos en finanzas, mercadotecnia, recursos humanos, contabilidad y administración estratégica.</li>
+          <li>Capacidad para tomar decisiones dentro de una empresa.</li>
+          <li>Habilidades de liderazgo, trabajo en equipo y solución de problemas.</li>
+          <li>Actuación con ética profesional para contribuir al desarrollo responsable de las organizaciones.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="oferta">
+      <div class="section-head reveal">
+        <span class="eyebrow">Oferta educativa</span>
+        <h2>Dónde estudiar y cómo se proyecta la carrera</h2>
+      </div>
+      <div class="university-grid">
+        <article class="university-card reveal"><h3>Nivel local</h3><p>Instituto Tecnológico de Tapachula.</p></article>
+        <article class="university-card reveal"><h3>Nivel estatal</h3><p>Universidad Autónoma de Chiapas.</p></article>
+        <article class="university-card reveal"><h3>Nivel nacional</h3><p>Universidad Nacional Autónoma de México e Instituto Politécnico Nacional.</p></article>
+        <article class="university-card reveal"><h3>Proyección internacional</h3><p>El área se relaciona con Negocios Internacionales, profesión enfocada en el comercio entre países y en la gestión empresarial global.</p></article>
+      </div>
+    </section>
+
+    <section class="section curriculum" id="plan">
+      <div class="section-head reveal">
+        <span class="eyebrow">Plan de estudios</span>
+        <h2>Materias principales de formación</h2>
+        <p>El plan de estudios incluye asignaturas que permiten comprender el funcionamiento de las organizaciones y aplicar conocimientos en situaciones reales.</p>
+      </div>
+      <div class="curriculum-grid">
+        <article class="subject reveal">Introducción a la administración</article>
+        <article class="subject reveal">Contabilidad</article>
+        <article class="subject reveal">Economía</article>
+        <article class="subject reveal">Matemáticas financieras</article>
+        <article class="subject reveal">Mercadotecnia</article>
+        <article class="subject reveal">Recursos humanos</article>
+        <article class="subject reveal">Administración estratégica</article>
+        <article class="subject reveal">Derecho empresarial</article>
+        <article class="subject reveal">Prácticas profesionales</article>
+      </div>
+    </section>
+
+    <section class="section labor-section" id="campo">
+      <div class="section-head reveal">
+        <span class="eyebrow">Campo laboral</span>
+        <h2>Áreas donde puede desempeñarse un administrador</h2>
+      </div>
+      <div class="labor-grid">
+        <article class="labor-card reveal">Recursos Humanos</article>
+        <article class="labor-card reveal">Finanzas</article>
+        <article class="labor-card reveal">Mercadotecnia</article>
+        <article class="labor-card reveal">Administración General</article>
+        <article class="labor-card reveal">Organizaciones gubernamentales</article>
+        <article class="labor-card reveal">Instituciones de servicio</article>
+        <article class="labor-card reveal">Emprendimiento</article>
+        <article class="labor-card reveal">Empresas públicas y privadas</article>
+      </div>
+    </section>
+
+    <section class="section ethics" id="codigo">
+      <div class="section-head reveal">
+        <span class="eyebrow">Código ético</span>
+        <h2>Principios que guían la conducta profesional</h2>
+      </div>
+      <div class="ethics-orbit">
+        <article class="reveal"><strong>Honestidad</strong><span>Actuar correctamente y evitar prácticas deshonestas.</span></article>
+        <article class="reveal"><strong>Responsabilidad</strong><span>Asumir decisiones y consecuencias en la organización.</span></article>
+        <article class="reveal"><strong>Respeto</strong><span>Mantener trato profesional con clientes y colaboradores.</span></article>
+        <article class="reveal"><strong>Justicia</strong><span>Tomar decisiones considerando el bienestar social.</span></article>
+        <article class="reveal"><strong>Transparencia</strong><span>Guiar la gestión con claridad y confianza.</span></article>
+      </div>
+    </section>
+
+    <section class="section enterprise-hero" id="empresa">
+      <div class="section-head reveal">
+        <span class="eyebrow">Empresa analizada</span>
+        <h2>Hotel Holiday Inn Express Tapachula</h2>
+        <p>La experiencia empresarial permitió observar cómo se aplican la administración y la contabilidad dentro de una empresa hotelera real de Tapachula.</p>
+      </div>
+      <div class="experience-layout">
+        <div class="swiper reveal" id="photoSlider">
+          <img class="active" src="assets/p053_img01_xref346.jpeg" alt="Visita empresarial en Holiday Inn de Tapachula">
+          <img src="assets/p053_img02_xref347.jpeg" alt="Recorrido empresarial en Holiday Inn de Tapachula">
+          <img src="assets/p054_img01_xref354.jpeg" alt="Entrevista profesional en Holiday Inn de Tapachula">
+          <img src="assets/p054_img02_xref355.jpeg" alt="Evidencia empresarial en Holiday Inn de Tapachula">
+          <button id="prevPhoto" aria-label="Foto anterior">‹</button>
+          <button id="nextPhoto" aria-label="Foto siguiente">›</button>
+        </div>
+        <div class="experience-points reveal">
+          <h3>Organización observada</h3>
+          <p>Departamentos vinculados: recepción, limpieza, mantenimiento, alimentos y bebidas, administración y contabilidad.</p>
+          <p>Procesos administrativos: ventas, facturación de huéspedes, pólizas de ventas, depósitos del día, reembolsos y relación con proveedores.</p>
+          <p>Gastos principales: nómina, mantenimiento y luz eléctrica.</p>
+          <p>Servicios mencionados: alberca, bar, palapa, salones para eventos y restaurante.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company-info" id="ubicacion">
+      <div class="section-head reveal">
+        <span class="eyebrow">Ubicación, historia y presencia digital</span>
+        <h2>Información empresarial del hotel</h2>
+      </div>
+      <div class="company-grid">
+        <article class="company-card reveal">
+          <h3>Ubicación</h3>
+          <p>Carretera a Puerto Madero KM 3.5, Colonia Las Hortencias, Tapachula, Chiapas, 30700, México.</p>
+          <a class="btn primary small" href="https://www.google.com/maps/search/?api=1&query=Holiday%20Inn%20Express%20Tapachula" target="_blank" rel="noreferrer">Abrir mapa</a>
+        </article>
+        <article class="company-card reveal">
+          <h3>Historia y contexto</h3>
+          <p>El hotel forma parte de Holiday Inn Express, marca de IHG Hotels & Resorts. En la visita se observó su operación hotelera, la coordinación de áreas y la importancia de la contabilidad para mantener estabilidad financiera.</p>
+        </article>
+        <article class="company-card reveal">
+          <h3>Página web y redes</h3>
+          <p><a href="https://www.ihg.com/holidayinnexpress/hotels/es/es/tapachula/tappf/hoteldetail" target="_blank" rel="noreferrer">Sitio oficial del hotel</a></p>
+          <p><a href="https://www.facebook.com/523522740993432" target="_blank" rel="noreferrer">Facebook local</a></p>
+          <p><a href="https://www.instagram.com/holidayinn/" target="_blank" rel="noreferrer">Instagram Holiday Inn</a></p>
+        </article>
+      </div>
+      <iframe class="map-frame reveal" title="Mapa Holiday Inn Express Tapachula" loading="lazy" src="https://www.google.com/maps?q=Holiday%20Inn%20Express%20Tapachula&output=embed"></iframe>
+    </section>
+
+    <section class="section philosophy company-philosophy" id="filosofia">
+      <div class="section-head reveal">
+        <span class="eyebrow">Filosofía empresarial</span>
+        <h2>Servicio, responsabilidad y hospitalidad</h2>
+      </div>
+      <div class="mission-grid">
+        <article class="reveal"><h3>Misión / propósito</h3><p>IHG resume su propósito como “True Hospitality for Good”: una hospitalidad orientada a crear experiencias positivas para huéspedes, colaboradores, propietarios y comunidades, cuidando también el entorno.</p></article>
+        <article class="reveal"><h3>Visión operativa</h3><p>Ser una opción conveniente y moderna para quienes viajan por negocios o de paso por Tapachula, con servicios que apoyan descanso, productividad y movilidad.</p></article>
+        <article class="reveal"><h3>Valores aplicados</h3><p>Responsabilidad, atención al cliente, trabajo en equipo, honestidad, profesionalismo, cuidado ambiental y solución rápida de problemas.</p></article>
+        <article class="reveal"><h3>Responsabilidad social</h3><p>La operación hotelera considera ahorro de agua y energía, reducción de desperdicios y disminución de servicios innecesarios cuando el huésped así lo decide.</p></article>
+      </div>
+    </section>
+
+    <section class="section interview">
+      <div class="section-head reveal">
+        <span class="eyebrow">Entrevista profesional</span>
+        <h2>Aprendizajes de la experiencia en el hotel</h2>
+      </div>
+      <div class="qa-list">
+        <details class="reveal" open><summary>¿Por qué estudiar Administración?</summary><p>Porque es una carrera amplia y necesaria en cualquier empresa. Permite organizar equipos, procesos y recursos.</p></details>
+        <details class="reveal"><summary>¿Qué significa actuar con ética en una empresa hotelera?</summary><p>Implica responsabilidad, concentración y precisión, especialmente al manejar números, pagos y decisiones que impactan la operación.</p></details>
+        <details class="reveal"><summary>¿Qué papel tiene el liderazgo administrativo?</summary><p>La administración organiza equipos de trabajo; de esa organización dependen los resultados.</p></details>
+        <details class="reveal"><summary>¿Qué consejo se da a los estudiantes?</summary><p>Mantener buena actitud desde el inicio, esforzarse incluso en tareas sencillas, trabajar con entusiasmo y confiar en que sí pueden lograrlo.</p></details>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-head reveal">
+        <span class="eyebrow">Galería</span>
+        <h2>Evidencias visuales de la carrera aplicada en empresa</h2>
+      </div>
+      <div class="gallery" id="gallery">
+        <img src="assets/p053_img01_xref346.jpeg" alt="Evidencia de visita empresarial">
+        <img src="assets/p053_img02_xref347.jpeg" alt="Evidencia de visita empresarial">
+        <img src="assets/p054_img01_xref354.jpeg" alt="Evidencia de entrevista empresarial">
+        <img src="assets/p054_img02_xref355.jpeg" alt="Evidencia de visita empresarial">
+        <img src="assets/page_028.jpg" alt="Historia y perfiles de la carrera">
+        <img src="assets/page_029.jpg" alt="Oferta educativa y plan de estudios">
+        <img src="assets/page_030.jpg" alt="Campo laboral y código ético">
+        <img src="assets/page_051.jpg" alt="Análisis de administración y contabilidad">
+        <img src="assets/page_052.jpg" alt="Conclusión de visita empresarial">
+        <img src="assets/page_057.jpg" alt="Observaciones de la empresa">
+        <img src="assets/page_059.jpg" alt="Entrevista profesional">
+        <img src="assets/page_060.jpg" alt="Entrevista profesional">
+      </div>
+    </section>
+
+    <section class="section conclusions">
+      <div class="section-head reveal">
+        <span class="eyebrow">Cierre</span>
+        <h2>¿Por qué elegir Administración de Empresas?</h2>
+      </div>
+      <div class="conclusion-card reveal">
+        <p>Administración de Empresas ofrece una formación versátil para comprender el funcionamiento de organizaciones, coordinar recursos, liderar equipos y tomar decisiones responsables. La experiencia en el Hotel Holiday Inn de Tapachula demuestra que la administración y la contabilidad son esenciales para mantener orden, eficiencia, calidad de servicio y estabilidad financiera.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Administración de Empresas</strong>
+      <p>Exposición profesiográfica enfocada en la carrera y su aplicación real en el Hotel Holiday Inn Express Tapachula.</p>
+    </div>
+    <nav>
+      <a href="#carrera">Carrera</a>
+      <a href="#perfiles">Perfiles</a>
+      <a href="#oferta">Oferta educativa</a>
+      <a href="#empresa">Hotel Holiday Inn</a>
+      <a href="#galeria">Galería</a>
+    </nav>
+    <p class="credits">Carrera • Empresa • Ética • Responsabilidad social</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+  <div class="lightbox" id="lightbox"><button aria-label="Cerrar">×</button><img src="assets/p053_img01_xref346.jpeg" alt="Vista ampliada"></div>
+  <script src="script.js"></script>
+</body>
+</html>
