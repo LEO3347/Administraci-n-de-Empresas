@@ -50,7 +50,7 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.14 });
 $$(".reveal").forEach(el => revealObserver.observe(el));
 
-$$(".feature-card, .neo-card, .profile-card, .university-card, .labor-card, .wall-card, .lab-card").forEach(card => {
+$$(".feature-card, .neo-card, .profile-card, .university-card, .labor-card, .wall-card, .lab-card, .operation-card, .company-card").forEach(card => {
   card.classList.add("tilt-card");
   card.addEventListener("pointermove", event => {
     const rect = card.getBoundingClientRect();
